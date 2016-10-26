@@ -11,9 +11,14 @@
 </head>
 <style>
   body {
-      position: relative;
+    position: relative;
+    background-image: url('Image/bg5.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  #section1 {padding-top:50px;height:500px; margin-left: 150px; margin-right: 150px; color: #000; background-color: #1E88E5 ;
+  #section1 {padding-top:40px;height:300px; margin-left: 150px; margin-right: 150px; color: #000;background-color: #fff;
                  font-family : "Times New Roman", Times, serif;}
   #section21 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #fff; background-color: #00bcd4;
                 font-family : "Times New Roman", Times, serif;}
@@ -29,33 +34,34 @@
                  font-family : "Times New Roman", Times, serif;}
 
   p{
-      font-size: 18px;
-      filter: grayscale(100%)
+      font-size: 30px;
   }
   ul.list-group{
   background-color:#FFD933
   }
-
-
+  div.summary{
+  filter: blur(2px);
+  }
+  ul.nav.nav-pills,#edu{
+    margin-left:150px;
+  }
 
 
 </style>
-<body background="Image/bg1.jpg" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="container-fluid">
 <div>
-
     <p>
         </br>
         </br>
         </br>
-
     </p>
 </div>
 
 <div class="container-fluid" align="center">
-    <img src="Image/Resume.jpg" class="img-circle" align="" width="250" height="250" border="1">
+    <img src="Image/Resume.jpg" class="img-circle"  width="250" height="250">
     <h1>Patel Kirtan</h1>
 </div>
-
+<br><br>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -81,18 +87,18 @@
         </div>
     </div>
 </nav>
-
-<div id="section1" class="container-fluid">
+<br><br>
+<div id="section1" class="container-fluid" >
     <h1>Summary</h1>
     <hr>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-</div>
+    <p>In exploring the varied aspects of software engineering over the course of past few years,
+        I have collected a comprehensive understanding of software development.
+        I have also become skillful at programming in Java through several projects and modest programming platforms.</p>
 
-<div id="section2" class="container">
-    <h2>Education</h2>
+</div>
+<br><br>
+<div id="section2" class="container-fluid">
+    <h2 id="edu">Education</h2>
     <ul class="nav nav-pills">
         <li class="active"><a data-toggle="pill" href="#section21">Master's</a></li>
         <li><a data-toggle="pill" href="#section22">Bachelor</a></li>
@@ -111,11 +117,11 @@
         </div>
     </div>
 </div>
-
+<br><br>
 <div id="section3" class="container-fluid">
     <h1>Skills & Endorsements</h1>
     <h2>Basic List Group</h2>
-    <ul class="list-group" >
+    <ul class="list-group">
         <h3>Programing</h3>
         <li class="list-group-item">Java</li>
         <li class="list-group-item">Android</li>
@@ -137,6 +143,7 @@
 
     </ul>
 </div>
+<br><br>
 <div id="section4" class="container-fluid">
     <h1>Projects</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
@@ -144,6 +151,7 @@
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
         section and look at the navigation bar while scrolling!</p>
 </div>
+<br><br>
 <div id="section5" class="container-fluid">
     <h1>Honors & Awards</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
@@ -151,6 +159,7 @@
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
         section and look at the navigation bar while scrolling!</p>
 </div>
+<br><br>
 <div id="section6" class="container-fluid">
     <h1>Contact</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
