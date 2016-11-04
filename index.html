@@ -17,45 +17,51 @@
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
   }
 
-  #section1 {padding-top:40px;height:300px; margin-left: 150px; margin-right: 150px; color: #000;background-color: #1f9cd4;
-                 font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
-  #section21 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #fff; background-color: #00bcd4;
-                font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
-  #section22 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #fff; background-color: #009688;
-                font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
-  #section3 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000; background-color: #ff9800;
-                font-family : "Times New Roman", Times, serif; overflow: scroll; background-image: url('Image/Content/img2.jpg');}
-  #section4 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000; background-color: #1E88E5 ;
-                 font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
-  #section5 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #fff; background-color: #673ab7;
-                 font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
-  #section6 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #fff; background-color: #ff9898;
-                 font-family : "Times New Roman", Times, serif; background-image: url('Image/Content/img2.jpg');}
+  #section1 {padding-top:50px; margin-left: 150px; margin-right: 150px; color: #000;
+                overflow: scroll; }
+  #section2 {padding-top:50px; margin-left: 150px; margin-right: 150px;}
+  #section21 {padding-top:50px;height:500px;margin-left: 100px; margin-right: 100px;color: #fff;
+                overflow: scroll; }
+  #section22 {padding-top:50px;height:500px;margin-left: 100px; margin-right: 100px;color: #fff;
+                overflow: scroll; }
+  #section3 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;
+                overflow: scroll;}
+  #section4 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;
+                 overflow: scroll;}
+  #section5 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #fff;
+                 overflow: scroll;}
+  #section6 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #fff;
+                 overflow: scroll;}
 
   p{
-      font-size: 30px;
+      font-size: 18px;
   }
-  ul.list-group{
-  background-color:#FFD933
-  }
-  div.summary{
-  filter: blur(2px);
-  }
-  ul.nav.nav-pills,#edu{
+  ul.nav.nav-pills,#edu,#eduhr{
     margin-left:150px;
+    margin-right:150px;
+    color: white;
   }
-  hr{
+  #name,#name1{
         position: center;
         width: 150px;
        border-color: gray;
-
   }
   #tag{
       color:white;
       text-transform: uppercase;
   }
+  #wrapper{
+        opacity: 0.8;
+  }
+
+
+
+
+
+
 
 
 
@@ -72,9 +78,9 @@
 
 <div class="container-fluid" align="center">
     <img src="Image/Resume.jpg" class="img-circle" width="250" height="250">
-    <hr>
+    <hr id="name">
     <h1 id="tag">Patel Kirtan</h1>
-    <hr>
+    <hr id="name1">
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
 <br><br><br><br>
@@ -104,83 +110,122 @@
     </div>
 </nav>
 <br><br>
-<div id="section1" class="container-fluid">
-    <h1>Summary</h1>
-    <p>In exploring the varied aspects of software engineering over the course of past few years,
-        I have collected a comprehensive understanding of software development.
-        I have also become skillful at programming in Java through several projects and modest
-        programming platforms.</p>
+<div id="wrapper" class="container-fluid">
 
-</div>
-<br><br>
-<div id="section2" class="container-fluid">
-    <h2 id="edu">Education</h2>
-    <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#section21">Master's</a></li>
-        <li><a data-toggle="pill" href="#section22">Bachelor</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="section21" class="tab-pane fade in active">
-            <h3>Master's</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div id="section22" class="tab-pane fade">
-            <h3>Bachelor</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.</p>
+    <div id="section1" class="panel panel-primary">
+        <div class="panel-heading">Summary</div>
+        <div class="panel-body">
+            <p>In exploring the varied aspects of software engineering over the<br>
+                course of past few years, I have collected a comprehensive understanding of software<br>
+                development. I have also become skillful at programming in Java through several
+                projects<br>
+                and modest programming platforms.
+            </p>
         </div>
     </div>
-</div>
-<br><br>
-<div id="section3" class="container-fluid">
-    <h1>Skills & Endorsements</h1>
-    <ul class="list-group">
-        <h3>Programing</h3>
-        <li class="list-group-item">Java</li>
-        <li class="list-group-item">Android</li>
-        <h3>Web Technologies</h3>
-        <li class="list-group-item">HTML5</li>
-        <li class="list-group-item">JavaScript</li>
-        <li class="list-group-item">CSS</li>
-        <li class="list-group-item">Bootstrap</li>
-        <h3>Database</h3>
-        <li class="list-group-item">SQL</li>
-        <li class="list-group-item">MySQl</li>
-        <li class="list-group-item">SQLite</li>
-        <li class="list-group-item">MSAccess</li>
-        <h3>Version Control</h3>
-        <li class="list-group-item">GIT</li>
-        <h3>Extras</h3>
-        <li class="list-group-item">MS Office</li>
-        <li class="list-group-item">Photoshop</li>
 
-    </ul>
-</div>
-<br><br>
-<div id="section4" class="container-fluid">
-    <h1>Projects</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-</div>
-<br><br>
-<div id="section5" class="container-fluid">
-    <h1>Honors & Awards</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-</div>
-<br><br>
-<div id="section6" class="container-fluid">
-    <h1>Contact</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this
-        section and look at the navigation bar while scrolling!</p>
+    <br><br>
+    <div id="section2" class="panel panel-primary">
+        <h2 id="edu" class="panel-heading">Education</h2>
+        <div class="panel- body">
+            <hr id="eduhr">
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#section21">Master's</a></li>
+                <li>
+                    <a data-toggle="pill" href="#section22">Bachelor</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="section21" class="tab-pane fade in active">
+                    <h3>Master's</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="section22" class="tab-pane fade">
+                    <h3>Bachelor</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="section3" class="panel panel-primary">
+        <div class="panel-heading">Skills</div>
+        <div class="panel-body">
+            <hr>
+            <ul class="list-group">
+                <h3>Programing</h3>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">Android</li>
+                <h3>Web Technologies</h3>
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">Bootstrap</li>
+                <h3>Database</h3>
+                <li class="list-group-item">SQL</li>
+                <li class="list-group-item">MySQl</li>
+                <li class="list-group-item">SQLite</li>
+                <li class="list-group-item">MSAccess</li>
+                <h3>Version Control</h3>
+                <li class="list-group-item">GIT</li>
+                <h3>Extras</h3>
+                <li class="list-group-item">MS Office</li>
+                <li class="list-group-item">Photoshop</li>
+
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div id="section4" class="panel panel-primary">
+        <div class="panel-heading">Projects</div>
+        <div class="panel-body">
+            <hr>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+                scroll
+                this
+                section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+                scroll
+                this
+                section and look at the navigation bar while scrolling!</p>
+        </div>
+    </div>
+    <br><br>
+    <div id="section5" class="panel panel-primary">
+        <div class="panel-heading">Honors & Rewards</div>
+        <div class="panel-body">
+            <hr>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+                scroll
+                this
+                section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
+                scroll
+                this
+                section and look at the navigation bar while scrolling!</p>
+        </div>
+    </div>
+    <br><br>
+    <div id="section6" class="panel panel-primary">
+        <div class="panel-heading">Contacts</div>
+        <div class="panel-body">
+            <hr>
+            <p>
+            <h3>Email:</h3>
+            <h4>PATELKIRTANN@GMAIL.COM</h4>
+            </p>
+
+            <p>
+            <h3>Email:</h3>
+            <h4>PATELKIRTANN@GMAIL.COM</h4>
+            </p>
+        </div>
+    </div>
 </div>
 <br><br><br><br><br>
 
