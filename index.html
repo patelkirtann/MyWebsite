@@ -12,7 +12,8 @@
 <style>
   body {
     position: relative;
-    background-image: url('Image/bg5.jpg');
+    background-color:#000;
+    background-image: url('Image/bg3.jpg');
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -20,21 +21,21 @@
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
   }
 
-  #section1 {padding-top:50px; margin-left: 150px; margin-right: 150px; color: #000;
+  #section1, #section3 , #section4 , #section5 , #section6 {padding-top:50px; margin-left: 150px; margin-right: 150px; color: #000;
                 overflow: scroll; }
   #section2 {padding-top:50px; margin-left: 150px; margin-right: 150px;}
-  #section21 {padding-top:50px;height:500px;margin-left: 50px; margin-right: 50px;color: #000;
+  #section21,  #section22 {padding-top:50px;height:500px;margin-left: 50px; margin-right: 50px;color: #000;
                 overflow: scroll; }
-  #section22 {padding-top:50px;height:500px;margin-left: 50px; margin-right: 50px;color: #000;
-                overflow: scroll; }
-  #section3 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;
-                overflow: scroll;}
-  #section4 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;
-                 overflow: scroll;}
-  #section5 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #000;
-                 overflow: scroll;}
-  #section6 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #000;
-                 overflow: scroll;}
+  <!--#section22 {padding-top:50px;height:500px;margin-left: 50px; margin-right: 50px;color: #000;-->
+                <!--overflow: scroll; }-->
+  <!--#section3 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;-->
+                <!--overflow: scroll;}-->
+  <!--#section4 {padding-top:50px;height:500px;margin-left: 150px; margin-right: 150px;color: #000;-->
+                 <!--overflow: scroll;}-->
+  <!--#section5 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #000;-->
+                 <!--overflow: scroll;}-->
+  <!--#section6 {padding-top:50px;height:500px ;margin-left: 150px; margin-right: 150px;color: #000;-->
+                 <!--overflow: scroll;}-->
 
   p{
       font-size: 16px;
@@ -56,6 +57,17 @@
   #wrapper{
         opacity: 0.9;
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -185,67 +197,131 @@
         <div class="panel-body">
             <ul class="list-group">
                 <h4>Programing</h4>
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">Android</li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                        Java
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        Android
+                    </div>
+                </li>
                 <h4>Web Technologies</h4>
-                <li class="list-group-item">HTML5</li>
-                <li class="list-group-item">JavaScript</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">Bootstrap</li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        HTML5
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        JavaScript
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        CSS
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        BootStrap
+                    </div>
+                </li>
                 <h4>Database</h4>
-                <li class="list-group-item">SQL</li>
-                <li class="list-group-item">MySQl</li>
-                <li class="list-group-item">SQLite</li>
-                <li class="list-group-item">MSAccess</li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        SQL
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                        MySQL
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                        SQLite
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        MSAccess
+                    </div>
+                </li>
                 <h4>Version Control</h4>
-                <li class="list-group-item">GIT</li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        GIT
+                    </div>
+                </li>
                 <h4>Extras</h4>
-                <li class="list-group-item">MS Office</li>
-                <li class="list-group-item">Photoshop</li>
-
+                <li class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                         role="progressbar"
+                         aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                        MS Office
+                    </div>
+                </li>
+                <li class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        Photoshop
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
     <br><br>
     <div id="section4" class="panel panel-primary">
         <div class="panel-heading">Projects</div>
-        <div class="panel-body">
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
-                scroll
-                this
-                section and look at the navigation bar while scrolling!</p>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to
-                scroll
-                this
-                section and look at the navigation bar while scrolling!</p>
-        </div>
+        < class="panel-body">
+        <pre>
+                <dl>
+                    <dt></dt>
+                </dl>
+            </pre>
+        <p>
+        <p>Christmas is in
+            <meter value="30" min="1" max="366" title="days">30 days!</meter>
+        </p>
+        </p>
     </div>
     <br><br>
     <div id="section5" class="panel panel-primary">
         <div class="panel-heading">Honors & Rewards</div>
         <div class="panel-body">
             <pre>Try to scroll this section and look at the navigatio /n</pre>
-            <pre>Try to scroll this section and look at the navigation bar while scrolling! Try to
-                scroll
-                this
-                section and look at the navigation bar while scrolling!</pre>
         </div>
     </div>
     <br><br>
     <div id="section6" class="panel panel-primary">
-        <div class="panel-heading">Contacts</div>
+        <div class="panel-heading">Volunteer work</div>
         <div class="panel-body">
             <p>
             <h3>Email:</h3>
             <h4>PATELKIRTANN@GMAIL.COM</h4>
             </p>
 
-            <p>
-            <h3>Email:</h3>
-            <h4>PATELKIRTANN@GMAIL.COM</h4>
-            </p>
         </div>
     </div>
+</div>
 </div>
 <br><br><br><br><br>
 
